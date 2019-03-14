@@ -20,4 +20,4 @@ spring:
 eureka:
     client:
         service-url:
-            defaultZone: http://suntion.cc:8101/eureka
+            defaultZone: http://suntion.cc:8761/eureka
