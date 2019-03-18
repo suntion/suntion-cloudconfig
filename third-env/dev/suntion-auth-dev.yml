@@ -1,14 +1,14 @@
 server:
-    port: 9010
+    port: 8010
     servlet:
         path: /
-suntion:
-    log:
-        level: info
-        path: /var/log/${spring.application.name}
+logging:
+    path: /var/log/${spring.application.name}
 spring:
     application:
         name: suntion-auth
+    profiles:
+        active: ${active.profile}
     datasource:
         druid:
             min-idle: 0

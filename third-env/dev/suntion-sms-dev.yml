@@ -5,6 +5,8 @@ server:
 spring:
     application:
         name: suntion-sms
+    profiles:
+        active: ${active.profile}
 eureka:
     client:
         service-url:
