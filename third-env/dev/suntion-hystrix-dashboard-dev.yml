@@ -6,7 +6,7 @@ spring:
 eureka:
     client:
         service-url:
-            defaultZone: http://127.0.0.1:8761/eureka/
+            defaultZone: http://sontion.cn:8761/eureka/
 turbine:
-    app-config: suntion-sms,suntion-auth
+    app-config: suntion-sms,suntion-auth,suntion-bankcard
     cluster-name-expression: new String("default")
