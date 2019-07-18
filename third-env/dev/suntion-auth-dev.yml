@@ -2,13 +2,7 @@ server:
     port: 8010
     servlet:
         path: /
-logging:
-    path: /var/log/${spring.application.name}
 spring:
-    application:
-        name: suntion-auth
-    profiles:
-        active: ${active.profile}
     datasource:
         druid:
             min-idle: 0
@@ -49,7 +43,7 @@ spring:
                     class: org.quartz.simpl.SimpleThreadPool
                     threadsInheritContextClassLoaderOfInitializingThread: true
     redis:
-        host: 47.106.122.50
+        host: sontion.cn
         port: 6379
         password: rootabc,123
         database: 0
