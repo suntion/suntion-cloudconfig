@@ -16,7 +16,7 @@ spring:
             initial-size: 5
             min-evictable-idle-time-millis: 300000
             max-wait: 60000
-            url: jdbc:mysql://47.112.101.27:3306/auth-dev?useSSL=false&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+            url: jdbc:mysql://47.112.101.27:3306/auth-test?useSSL=false&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
             username: root
             password: rootabc,123
     quartz:
@@ -59,7 +59,7 @@ mybatis-plus:
 eureka:
     client:
         service-url:
-            defaultZone: http://localhost:8761/eureka
+            defaultZone: http://suntion.cc:8761/eureka
 feign:
     hystrix:
         enabled: true
