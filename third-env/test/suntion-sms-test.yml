@@ -2,6 +2,10 @@ server:
     port: 8020
     servlet:
         path: /
+    ssl:
+        key-store: classpath:suntion.cc.pfx
+        key-store-type: PKCS12
+        key-password: cgTv99ha
 spring:
     application:
         name: suntion-sms
@@ -10,7 +14,7 @@ spring:
 eureka:
     client:
         service-url:
-            defaultZone: http://suntion.cc:8761/eureka
+            defaultZone: https://suntion.cc:8761/eureka
 feign:
     hystrix:
         enabled: true
