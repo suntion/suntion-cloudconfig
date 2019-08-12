@@ -14,7 +14,7 @@ spring:
 eureka:
     client:
         service-url:
-            defaultZone: https://localhost:8761/eureka
+            defaultZone: https://localhost:8761/eureka/
 feign:
     hystrix:
         enabled: true
