@@ -1,5 +1,5 @@
 server:
     port: 9001
 turbine:
-    app-config: suntion-sms,suntion-auth,suntion-bankcard
+    app-config: suntion-sms,suntion-auth,suntion-bankcard,suntion-config,suntion-gateway
     cluster-name-expression: new String("default")
