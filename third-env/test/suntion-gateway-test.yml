@@ -1,8 +1,6 @@
 server:
     port: 9002
 spring:
-    application:
-        name: suntion-gateway
     cloud:
         gateway:
             routes:
@@ -17,7 +15,3 @@ spring:
             discovery:
                 locator:
                     lowerCaseServiceId: true
-eureka:
-    client:
-        service-url:
-            defaultZone: http://suntion.cc:8761/eureka/
