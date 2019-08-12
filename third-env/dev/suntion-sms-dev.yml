@@ -2,10 +2,6 @@ server:
     port: 8020
     servlet:
         path: /
-    ssl:
-        key-store: classpath:suntion.cc.pfx
-        key-store-type: PKCS12
-        key-store-password: cgTv99ha
 spring:
     application:
         name: suntion-sms

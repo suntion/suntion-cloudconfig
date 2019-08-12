@@ -1,16 +1,12 @@
 server:
     port: 9001
-    ssl:
-        key-store: classpath:suntion.cc.pfx
-        key-store-type: PKCS12
-        key-store-password: cgTv99ha
 spring:
     application:
         name: suntion-hystrix-dashboard
 eureka:
     client:
         service-url:
-            defaultZone: https://localhost:8761/eureka/
+            defaultZone: http://localhost:8761/eureka/
 turbine:
     app-config: suntion-sms,suntion-auth,suntion-bankcard
     cluster-name-expression: new String("default")

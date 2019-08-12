@@ -1,9 +1,5 @@
 server:
     port: 9002
-    ssl:
-        key-store: classpath:suntion.cc.pfx
-        key-store-type: PKCS12
-        key-store-password: cgTv99ha
 spring:
     application:
         name: suntion-gateway
@@ -24,4 +20,4 @@ spring:
 eureka:
     client:
         service-url:
-            defaultZone: https://suntion.cc:8761/eureka
+            defaultZone: http://suntion.cc:8761/eureka/
