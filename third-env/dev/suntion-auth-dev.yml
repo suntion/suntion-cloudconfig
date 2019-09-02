@@ -26,13 +26,13 @@ spring:
             quartz:
                 scheduler:
                     instanceId: AUTO
-                    instanceName: suntion_clusteredScheduler
+                    instanceName: pptech_clusteredScheduler
                     skipUpdateCheck: true
                 jobStore:
                     txIsolationLevelSerializable: false
                     useProperties: false
                     isClustered: true
-                    tablePrefix: QRTZ_
+                    tablePrefix: qrtz_
                     misfireThreshold: 5000
                     class: org.quartz.impl.jdbcjobstore.JobStoreTX
                     clusterCheckinInterval: 10000
